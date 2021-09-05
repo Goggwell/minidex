@@ -34,7 +34,7 @@ Make mobile version of Minidex more user-friendly and appealing (right now every
 ## Known Bugs
 - Pokemon with more than 3 items in the evolution chain will have a faulty evolution row (i.e. Eevee, Bellossom).
 - Some Pokemon's names appear differently in the PokeAPI (i.e. Urshifu's name is different in the API), so you will have to use the ID to find the Pokemon.
-  - List includes: Deoxys, Urshifu (if you find anymore let me know!)
+  - List includes: Deoxys, Urshifu, Giratina (if you find anymore let me know!)
 
 
 ## Contributing
