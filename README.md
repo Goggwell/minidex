@@ -27,6 +27,8 @@ Better organize code in the future (perhaps by using React):
 
 Add Winbox.js for special popups (related to evolutions, moveset etc.)
 
+Make mobile version of Minidex more user-friendly and appealing (right now everything is squished).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
