@@ -21,7 +21,7 @@ yarn watch
 ```
 Makes use of gulp and browser-sync.
 ## To-Do
-Use a front-end framework (i.e. React) to better organize code:
+Better organize code in the future (perhaps by using React):
 - Separate Minidex components (cleaner code + more efficient/less lag)
 - Easier for adding more building blocks (in case I want to add new features)
 
