@@ -1,0 +1,85 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: $default-font-size;
+}
+
+.heading-primary {
+
+    
+    &--main {
+        color: transparent;
+        background-image: linear-gradient(to right bottom, $color-tertiary, $color-tertiary-light);
+        -webkit-background-clip: text;
+        background-clip: text;
+        display: block;
+        font-size: 6rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &--sub {
+        color: $color-tertiary-light;
+        display: block;
+        font-size: $default-font-size;
+        font-weight: 600;
+
+        &--link, &--link:link, &--link:visited {
+            text-decoration: none;
+            color: $color-tertiary;
+            transition: all .2s;
+
+            &:hover {
+                color: $color-secondary-light;
+            }
+        }
+    }
+}
+
+.header__version-box {
+    font-size: 1.4rem;
+    color: $color-tertiary-light;
+}
+
+.heading-secondary {
+    color: $color-tertiary-light;
+    font-size: 3rem;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    color: $color-tertiary-light;
+
+    & a {
+        text-decoration: none;
+        color: $color-tertiary;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-secondary-light;
+        }
+    }
+
+    &--code {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 1.4rem;
+        padding: .2rem;
+        font-style: italic;
+        background-color: $color-primary;
+    }
+}
+
+.footer {
+    color: $color-tertiary-light;
+
+    & a {
+        text-decoration: none;
+        color: $color-tertiary;
+        transition: all .2s;
+
+        &:hover {
+            color: $color-secondary-light;
+        }
+    }
+}

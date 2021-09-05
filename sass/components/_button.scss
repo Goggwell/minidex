@@ -1,0 +1,65 @@
+.btn {
+    &, &:link, &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: left;
+        padding: 1.5rem 2.8rem 1.3rem 2.8rem;
+        display: inline-block;
+        border-radius: .5rem;
+        position: relative;
+        font-weight: 700;
+
+        border: none;
+        cursor: pointer;
+    }
+
+    &--green {
+        background-color: $color-secondary;
+        color: $color-tertiary-light;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-secondary-dark ;
+        }
+    }
+
+    &:first-of-type {
+        margin-right: 4.2rem;
+
+        @include respond(phone-dex) {
+            margin-right: 0;
+        }
+    }
+
+    & .btn__icon {
+        float: left;
+        width: 3.3rem;
+        height: 3.3rem;
+        margin-right: 1.5rem;
+    }
+
+    &__icon i {
+        font-size: 3rem;
+    }
+
+    & .btn__text {
+        float: left;
+        position: relative;
+        top: .1rem;
+    }
+
+    & .btn__action {
+        display: block;
+        margin-bottom: -.1rem;
+        font-weight: 700;
+        font-size: .9rem;
+        letter-spacing: .57px;
+    }
+
+    & .btn__kind {
+        display: block;
+        font-size: 1.5rem;
+        letter-spacing: .8px;
+
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "minidex",
+  "version": "1.0.0",
+  "description": "Miniature PokeDex written in JavaScript",
+  "main": "index.js",
+  "author": "Samuel Yusuf <zulkarnaensamuel1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile": "gulp style",
+    "watch": "gulp watch",
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.39.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  }
+}

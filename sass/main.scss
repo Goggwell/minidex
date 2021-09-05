@@ -1,0 +1,24 @@
+//Partials and Imports
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/canvas";
+@import "components/minidex";
+@import "components/reset";
+@import "components/scroll";
+@import "components/terminal";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/hr";
+
+@import "pages/app";
+@import "pages/home";

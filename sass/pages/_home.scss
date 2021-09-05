@@ -1,0 +1,19 @@
+.section-docs {
+    background-image: linear-gradient(
+                        to left bottom, 
+                        rgba($color-secondary, 1), 
+                        rgba($color-primary, 1));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 10rem 0;
+}
+
+.docs-text {
+    text-align: center;
+    margin-top: -1rem;
+
+    & .row {
+        margin-bottom: 0;
+    }
+}

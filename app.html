@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Minidex</title>
+</head>
+<body>
+    <main>
+        <section class="section-app" id="section-app">
+            <canvas class="background"></canvas>
+            <div class="minidex">
+                <div class="minidex__container">
+                    <div class="row--card u-center-text minidex__head">
+                        <h1>MINIDEX</h1>
+                        <p class="minidex__head--sub">by Samuel Yusuf</p>
+                    </div>
+                    <div class="row--card">
+                        <form class="u-center-text minidex__search-form">
+                            <input type="text" placeholder="Input name or ID..." name="searchText" id="searchText">
+                            <button id="searchBtn">Search</button>
+                        </form>
+                    </div>
+                    <div class="row--card u-center-text">
+                        <a href="index.html" class="btn btn--green btn--home">
+                            <div class="btn__icon"><i class="fas fa-home"></i></div>
+                            <div class="btn__text">
+                                <span class="btn__action">Return to</span>
+                                <span class="btn__kind">Home</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row--card minidex__title">
+                        <div class="minidex__title--imgcontainer">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" class="minidex__title__img">
+                        </div>
+                        <h1 class="minidex__title--name">Pikachu</h1><span class="minidex__title--id">#25</span>
+                    </div>
+                    <div class="row--card">
+                        <div class="col-1-of-2">
+                            <h3>Bio</h3>
+                            <p class="minidex__bio--text">It stores electricity in the electric sacs on its cheeks. When it releases pent-up energy in a burst, the electric power is equal to a lightning bolt.</p>
+                            <br>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Genus:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__bio--genus">Mouse Pokémon</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Height:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__bio--height">0.4m</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Weight:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__bio--weight">6kg</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Type/s:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__bio--type">Electric</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Abilities:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__bio--ability">Static, Lightning-Rod (Hidden Ability)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1-of-2">
+                            <h3>Training</h3>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Base Exp:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__training--exp">112</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Base Happiness:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__training--happiness">70</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Capture Rate:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__training--caprate">190 (74.5%)</p>
+                                </div>
+                            </div>
+                            <div class="row--card">
+                                <div class="col-1-of-2">
+                                    <p>Growth Rate:</p>
+                                </div>
+                                <div class="col-1-of-2">
+                                    <p class="minidex__training--growth">Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row--card">
+                        <h3>Evolutions</h3>
+                    </div>
+                    <div class="row--card minidex__evo">
+                        
+                    </div>
+                    <br>
+                    <div class="row--card minidex__stats__title">
+                        <h3>Stats</h3>
+                    </div>
+                    <div class="row--card minidex__stats__row">
+                        <div class="col-1-of-6">
+                            <p>HP</p>
+                            <p class="minidex__stats__hp">35</p>
+                        </div>
+                        <div class="col-1-of-6">
+                            <p>Atk</p>
+                            <p class="minidex__stats__atk">55</p>
+                        </div>
+                        <div class="col-1-of-6">
+                            <p>Def</p>
+                            <p class="minidex__stats__def">40</p>
+                        </div>
+                        <div class="col-1-of-6">
+                            <p>Sp. Atk</p>
+                            <p class="minidex__stats__spatk">50</p>
+                        </div>
+                        <div class="col-1-of-6">
+                            <p>Sp. Def</p>
+                            <p class="minidex__stats__spdef">50</p>
+                        </div>
+                        <div class="col-1-of-6">
+                            <p>Speed</p>
+                            <p class="minidex__stats__speed">90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <div class="footer__container footer__container--large">
+                    Built by 
+                    <a href="https://github.com/Goggwell" target="_blank">Samuel Yusuf</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('searchBtn').addEventListener('click', pokeSearch);
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#464660',
+                connectParticles: 'true'
+            });
+        };
+    </script>
+</body>
+</html>

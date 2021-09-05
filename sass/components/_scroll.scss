@@ -1,0 +1,39 @@
+.scroll {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__bg, &__button {
+        position: absolute;
+        left: -1.6rem;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+    }
+
+    &__bg {
+        animation: pulse 1.2s ease infinite;
+        background: $color-secondary;
+    }
+
+    &__button {
+        position: absolute;
+        z-index: 99;
+        border: none;
+        background: $color-secondary;
+        background-size: 1.8rem;
+        outline: none;
+
+        & a {
+            cursor: pointer;
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-tertiary-light;
+            font-size: 1.7rem;
+        }
+    }
+}

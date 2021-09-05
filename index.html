@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Minidex</title>
+</head>
+<body>
+    <header class="header">
+        <canvas class="background"></canvas>
+        <div class="header__version-box">
+            <ul>
+                <li>Current version: <strong>1.0.0</strong></li>
+                <li>License: <strong>Apache-2.0</strong></li>
+            </ul>
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Minidex</span>
+                <span class="heading-primary--sub u-margin-top-medium">A miniature Pokédex using the <a href="https://pokeapi.co" target="_blank" class="heading-primary--sub--link">PokéAPI</a>.<br>Search for 800+ Pokémon now!</span>
+            </h1>
+        </div>
+
+        <div class="header__link-box">
+            <a href="app.html" class="btn btn--green btn--explore">
+                <div class="btn__icon"><i class="fas fa-globe"></i></div>
+                <div class="btn__text">
+                    <span class="btn__action">Explore</span>
+                    <span class="btn__kind">Minidex</span>
+                </div>
+            </a>
+            <a href="https://github.com/Goggwell/minidex" class="btn btn--green btn--github" target="_blank">
+                <div class="btn__icon"><i class="fab fa-github"></i></div>
+                <div class="btn__text">
+                    <span class="btn__action">View on</span>
+                    <span class="btn__kind">GitHub</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="header__scroll">
+            <div class="scroll__container">
+                <div class="scroll__bg"></div>
+                <div class="scroll__button">
+                    <a href="#section-docs"><i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <a href="#" class="reset">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <main>
+        <section class="section-docs" id="section-docs">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Documentation
+                </h2>
+            </div>
+
+            <div class="docs-text">
+                <p class="paragraph">
+                    To use Minidex locally, you can clone the repository:
+                </p>
+                <div class="row">
+                    <div class="terminal">
+                        <div class="terminal__toolbar">
+                            <div class="terminal__toolbar__button"></div>
+                            <div class="terminal__toolbar__button"></div>
+                            <div class="terminal__toolbar__button"></div>
+                        </div>
+                        <div class="terminal__text">
+                            <div class="terminal__text__line">
+                                <span class="terminal__text__line__number terminal__text__line__number--symbol">→</span>
+                                mkdir minidex
+                            </div>
+                            <div class="terminal__text__line">
+                                <span class="terminal__text__line__number terminal__text__line__number--symbol">→</span>
+                                cd minidex
+                            </div>
+                            <div class="terminal__text__line">
+                                <span class="terminal__text__line__number terminal__text__line__number--symbol">→</span>
+                                git clone https://github.com/Goggwell/minidex.git
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="paragraph">
+                    If you are using <a href="https://code.visualstudio.com" target="_blank">VSCode</a>, you can start the project with <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a>.
+                    <br>
+                    If not, you can simply do <span class="paragraph--code">npm run watch</span> or <span class="paragraph--code">yarn watch</span>:
+                </p>
+                <div class="row">
+                    <div class="terminal">
+                        <div class="terminal__toolbar">
+                            <div class="terminal__toolbar__button"></div>
+                            <div class="terminal__toolbar__button"></div>
+                            <div class="terminal__toolbar__button"></div>
+                        </div>
+                        <div class="terminal__text">
+                            <div class="terminal__text__line">
+                                <span class="terminal__text__line__number terminal__text__line__number--symbol">→</span>
+                                <span class="terminal__text__line__comment"># starts server on http://localhost:3000</span>
+                            </div>
+                            <div class="terminal__text__line">
+                                <span class="terminal__text__line__number terminal__text__line__number--symbol">→</span>
+                                yarn watch
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer">
+                <div class="footer__container footer__container--large">
+                    Built by 
+                    <a href="https://github.com/Goggwell" target="_blank">Samuel Yusuf</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#464660',
+                connectParticles: 'true'
+            });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.section-app {
+    background-image: linear-gradient(
+                        to right bottom, 
+                        rgba($color-primary, 1), 
+                        rgba($color-secondary, 1));
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 10rem 0;
+}

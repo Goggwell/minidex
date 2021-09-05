@@ -1,0 +1,58 @@
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+                        to right bottom, 
+                        rgba($color-primary, 1), 
+                        rgba($color-secondary, 1));
+    background-size: cover;
+    background-position: top;
+
+    &__version-box {
+        position: absolute;
+        top: 4rem;
+        right: 6.6rem;
+
+        & ul {
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            & li {
+                display: inline-block;
+
+                &:first-child::after {
+                    display: inline-block;
+                    content: "";
+                    width: 1px;
+                    height: 10px;
+                    margin: 0 13px 0 17px;
+                    background-color: #fff;
+                    opacity: 0.46;
+                }
+            }
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__link-box {
+        position: absolute;
+        top: 71%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    &__scroll {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

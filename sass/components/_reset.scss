@@ -1,0 +1,14 @@
+.reset {
+    display: block;
+    position: fixed;
+    top: auto;
+    bottom: 2.5rem;
+    right: 3rem;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.reset i {
+    color: $color-tertiary-light;
+    font-size: 1.6rem;
+}
