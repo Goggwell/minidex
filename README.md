@@ -24,7 +24,7 @@ Makes use of gulp and browser-sync. (gulp compiles the sass/scss into css, brows
 
 ## To-Do
 Better organize code in the future (perhaps by using React):
-- Separate Minidex components (cleaner code + more efficient/less lag)
+- Separate Minidex components within index.js (cleaner code + more efficient/less lag)
 - Easier for adding more building blocks (in case I want to add new features)
 
 Add Winbox.js for special popups (related to evolutions, moveset etc.)
