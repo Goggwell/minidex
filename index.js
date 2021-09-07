@@ -201,7 +201,7 @@ const pokeSearch = (ev) => {
                         <div class="col-1-of-3">
                             <p>#00${iterator}</p>
                             <div class="minidex__evo--bg">
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evoChain[i].species_id}.png">
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${evoChain[i].species_id}.png" alt="Pokémon Evolution">
                             </div>
                             <p>${evoChain[i].species_name}</p>
                         </div>
@@ -251,7 +251,7 @@ const pokeSearch = (ev) => {
 
         const pokeImageHtml =
         `
-            <img src="${sprite}" class="minidex__title__img">
+            <img src="${sprite}" class="minidex__title__img" alt="Pokémon">
         `
         const pokeImageMarkup = document.querySelector('.minidex__title--imgcontainer');
         pokeImageMarkup.innerHTML = pokeImageHtml;
